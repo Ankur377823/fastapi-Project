@@ -14,6 +14,6 @@ def predict_car_price(data:dict):
     
     input_data = pd.DataFrame([data])
     predictions=model.predict(input_data)[0]
-    set_cache_prediction(cache_key,predict_car_price)
+    set_cache_prediction(cache_key,predictions)
     return predictions
 

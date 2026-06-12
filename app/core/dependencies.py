@@ -12,4 +12,4 @@ def get_current_user(token:str = Header(...)):
     payload = verify_token(token)
     if not payload:
         raise HTTPException(status_code=401, detail='Inavlid JWT Token')
-    return payoad
+    return payload
