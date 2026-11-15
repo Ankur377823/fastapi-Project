@@ -1,24 +1,24 @@
-# 🚗 Car Price Prediction API
+# Car Price Prediction API
 
 A production-ready REST API that predicts used car prices using a Random Forest regression model. Built with FastAPI, secured with JWT authentication, cached with Redis, and monitored with Prometheus + Grafana — fully containerized with Docker Compose and deployed on Render.
 
-**[🔗 Live Demo](https://fastapi-project-lux4.onrender.com/docs)** | **[📦 GitHub](https://github.com/Ankur377823/fastapi-Project)**
+**[Live Demo](https://fastapi-project-lux4.onrender.com/docs)** | **[GitHub](https://github.com/Ankur377823/fastapi-Project)**
 
 ---
 
-## 📌 Features
+## Features
 
-- 🤖 **ML Inference** — Random Forest model trained on real-world car dataset with full preprocessing pipeline
-- 🔐 **JWT Authentication** — Token-based auth on all prediction endpoints
-- 🔑 **API Key Validation** — Secondary layer of access control via request headers
-- ⚡ **Redis Caching** — Repeated predictions served from cache, skipping model inference
-- 📊 **Prometheus + Grafana** — Real-time API monitoring and metrics dashboards
-- 🐳 **Docker Compose** — One-command spin-up of the full stack
-- ☁️ **Render Deployment** — Live deployment with managed Redis
+- **ML Inference** — Random Forest model trained on real-world car dataset with full preprocessing pipeline
+- **JWT Authentication** — Token-based auth on all prediction endpoints
+- **API Key Validation** — Secondary layer of access control via request headers
+- **Redis Caching** — Repeated predictions served from cache, skipping model inference
+- **Prometheus + Grafana** — Real-time API monitoring and metrics dashboards
+- **Docker Compose** — One-command spin-up of the full stack
+- **Render Deployment** — Live deployment with managed Redis
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 project/
@@ -53,7 +53,7 @@ project/
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -67,7 +67,7 @@ project/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Docker + Docker Compose
@@ -115,7 +115,7 @@ docker compose up --build
 
 ---
 
-## 🔑 Authentication Flow
+## Authentication Flow
 
 ### Step 1 — Get JWT token
 
@@ -164,7 +164,7 @@ curl -X POST http://localhost:8000/predict \
 
 ---
 
-## 📡 API Reference
+## API Reference
 
 ### `POST /login`
 | Field | Type | Description |
@@ -204,7 +204,7 @@ curl -X POST http://localhost:8000/predict \
 
 ---
 
-## 📊 Monitoring
+## Monitoring
 
 - **Prometheus** scrapes metrics from `/metrics` every 15 seconds
 - **Grafana** available at `http://localhost:3000` (default login: `admin/admin`)
@@ -212,7 +212,7 @@ curl -X POST http://localhost:8000/predict \
 
 ---
 
-## 🐳 Docker Services
+## Docker Services
 
 ```yaml
 services:
@@ -224,7 +224,7 @@ services:
 
 ---
 
-## 📄 License
+## License
 
 MIT License — feel free to use, modify, and distribute.
 
